@@ -19,7 +19,7 @@ class Downloads(Connect):
 		"""
 		if not u.endswith("details"):
 			u = sub_url(u)
-		ret = self.startwork(u)
+		self.startwork(u)
 		response = self.result()
 		soup = Soup(response.text, "lxml")
 		page = soup.find("div", class_="main page-q")
@@ -34,7 +34,7 @@ class Search(Connect):
 		self.query = query
 		
 	def search_apk(self) -> Tag:
-		x = self.startwork(self.base_url+self.search.format(self.query))
+		self.startwork(self.base_url+self.search.format(self.query))
 		response = self.result()
 		soup = Soup(response.text, "lxml")
 		ret = soup.find("div", attrs={"id":"search-res"})
@@ -70,7 +70,7 @@ class DetailApk(Downloads):
 					)
 
 	def detail_apk(self) -> dict:
-		start = self.startwork(self.ended_url)
+		self.startwork(self.ended_url)
 		response = self.result()
 		soup = Soup(response.text, "lxml")
 		box = soup.find("div", class_ = "box")
@@ -92,7 +92,7 @@ class TrandingApk(Downloads):
 		self.xdata = dict(results=list())
 	
 	def list_tranding(self):
-		start = self.startwork(self.base_url+self.tranding)
+		self.startwork(self.base_url+self.tranding)
 		response = self.result()
 		soup = Soup(response.text, "lxml")
 		find = soup.find("div", class_="left floatr")
