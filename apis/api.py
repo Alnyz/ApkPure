@@ -77,6 +77,6 @@ class ApkPure(object):
 			read.read(ret)
 		return read
 	
-	def download_(self, url, name, ex):
-		x = DownloadApk(name=name, extension=ex)
+	def download_(self, url, name, ex, path=None):
+		x = DownloadApk(name=name, extension=ex, path=path)
 		x.download_apk(url)
