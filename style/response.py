@@ -30,8 +30,7 @@ class ResponseRpc(object):
 	def __repr__(self):
 		L=['%s=%r'%(key, value) for key, value in self.items()]
 		return '<%s(%s)>'%(self.__class__.__name__, ', '.join(L))
-
-import json		
+	
 class ResponseJson(dict):
 	__setattr__= dict.__setitem__  
 	__delattr__= dict.__delitem__

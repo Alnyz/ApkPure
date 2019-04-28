@@ -1,6 +1,4 @@
 from .etc import Downloads
-from connecting import Connect
-
 import os
 class DownloadApk(Downloads):
 	def __init__(self, name, extension, path=None):

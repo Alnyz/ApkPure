@@ -1,6 +1,6 @@
 from .etc import Search, DetailApk, TrandingApk
 from .download_apk import DownloadApk
-from style.body import ResponseDetail, PreObject, ResponseObject, SimpleDict
+from style.body import ResponseDetail, ResponseObject, SimpleDict
 from typing import Union
 
 class ApkPure(object):
@@ -76,7 +76,18 @@ class ApkPure(object):
 			read = ResponseDetail()
 			read.read(ret)
 		return read
-	
-	def download_(self, url, name, ex, path=None):
+
+	def download_(self, url: str, name: str, ex: str, path: str=None) -> bool:
+		"""
+		use  this method to download application & store it into current main path
+		
+		:param url: <string> url downloaded getting from detail
+		:param name: <string> name for naming file downloaded
+		:param ex: <string> extension file, apkpure have 2 extension as .apk and .xapk,
+			use extension from detail for automatic set it
+		:param path: <string> path to directory where you want to store application
+		
+		:returnType: <bool> True if success download False otherwise
+		"""
 		x = DownloadApk(name=name, extension=ex, path=path)
 		x.download_apk(url)

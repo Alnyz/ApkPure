@@ -3,10 +3,9 @@ import grequests as reqs
 
 from .config import config
 from threading import Thread
-import threading
-from http.client import HTTPConnection
+
 from queue import Queue
-import logging
+import logging, threading
 
 log = logging.getLogger(__name__)
 
