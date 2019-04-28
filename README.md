@@ -1,7 +1,7 @@
 # ApkPure Unofficial Wrapper ✨
 _Search, Simplify detail & Downloadable from Apkpure.com_
 
-[![Python](https://img.shields.io/badge/Python-3.6%20%7C%203.7-brightgreen.svg)](pytho.org) [![License](https://img.shields.io/badge/MIT-License-blue.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/dyseo/ApkPure.svg?branch=master)](https://travis-ci.org/dyseo/ApkPure) [![Python](https://img.shields.io/badge/Python-3.6%20%7C%203.7-brightgreen.svg)](pytho.org) [![License](https://img.shields.io/badge/MIT-License-blue.svg)](https://opensource.org/licenses/MIT)
 ___
 ## Features
 1. Simply to use
