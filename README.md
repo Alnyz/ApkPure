@@ -11,6 +11,8 @@ ___
 4. Easy accessing dictionary
 
 ## Installing
+- `git clone https://github.com/dyseo/ApkPure`
+- `cd ApkPure`
 - `pip3 install -r requirements.txt`
 
 
@@ -44,7 +46,5 @@ print(detail)
 api.download_(url=detail.url_download, name=detail.title, ex=detail.extension, path="/downloads)
 ```
 
-## Author
+# Author
 Dyseo / [Dyseo](https://github.com/dyseo)
-
-> Feel free for opening any pull request, feel free for report any bug
