@@ -73,8 +73,7 @@ class ApkPure(object):
 		if self.return_as == "dict":
 			read = SimpleDict(ret).read
 		if self.return_as == "rpc":
-			read = ResponseDetail()
-			read.read(ret)
+			read = ret
 		return read
 
 	def download_(self, url: str, name: str, ex: str, path: str=None) -> bool:
