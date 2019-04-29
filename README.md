@@ -41,7 +41,7 @@ print(detail)
 
 ### Download application
 ```python
-api.download_(url=detail.url_download, name=detail.title, ex=detail.extension, patb=path)
+api.download_(url=detail.url_download, name=detail.title, ex=detail.extension, path="/downloads)
 ```
 
 ## Author
