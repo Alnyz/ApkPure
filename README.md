@@ -1,6 +1,7 @@
 # ApkPure Unofficial Wrapper ✨
 _Search, Simplify detail & Downloadable from Apkpure.com_
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a9cbc42bde0c4baa9122c2010485d0b0)](https://app.codacy.com/app/dyseo/ApkPure?utm_source=github.com&utm_medium=referral&utm_content=dyseo/ApkPure&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/dyseo/ApkPure.svg?branch=master)](https://travis-ci.org/dyseo/ApkPure) [![Python](https://img.shields.io/badge/Python-3.6%20%7C%203.7-brightgreen.svg)](pytho.org) [![License](https://img.shields.io/badge/MIT-License-blue.svg)](https://opensource.org/licenses/MIT)
 ___
 ## Features
